@@ -17,7 +17,7 @@ Ett enkelt webbaserat Whack-A-Mole-spel byggt med HTML, CSS och JavaScript (ES-m
 
 HTML5, CSS (Flexbox), JavaScript (ES6-moduler).
 
-Tillgänglighet:
+### Tillgänglighet:
 
 - aria-live för dynamisk statusinformation
 
