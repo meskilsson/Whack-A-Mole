@@ -5,9 +5,9 @@ Ett enkelt webbaserat Whack-A-Mole-spel byggt med HTML, CSS och JavaScript (ES-m
 
 
 ## Så här kör du projektet och spelar.
--- Klona eller ladda ner projektmappen
--- Öppna index.html i webbläsaren
--- Tryck på Starta
+- Klona eller ladda ner projektmappen
+- Öppna index.html i webbläsaren
+- Tryck på Starta
 
 
 
@@ -18,8 +18,8 @@ HTML5, CSS (Flexbox), JavaScript (ES6-moduler), DOM API.
 
 Tillgänglighet:
 
--- aria-live för dynamisk statusinformation
+- aria-live för dynamisk statusinformation
 
--- role="dialog" för game-over-overlay
+- role="dialog" för game-over-overlay
 
--- Fokusmarkering, tangentbordsnavigering och semantiska element
+- Fokusmarkering, tangentbordsnavigering och semantiska element
