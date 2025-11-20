@@ -1,7 +1,6 @@
 import { Mole } from "./Mole.js";
 
-// Centrera eventhantering via delegering på brädet (se vecko-materialet om addEventListener & bubbling).
-// TODO-markeringar lämnar utrymme för egna lösningar.
+
 export class Game {
     constructor({ boardEl, scoreEl, timeEl, missesEl, pauseBtn, playAgainBtn, gameOverLay, gameOverMessage }) {
         this.boardEl = boardEl;
@@ -29,7 +28,7 @@ export class Game {
         this.createGrid(this.gridSize);
         this.updateHud();
 
-        // Eventdelegering: en lyssnare hanterar alla barn-noder.
+
         this.boardEl.addEventListener('click', this.handleBoardClick);
         this.boardEl.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ')
@@ -81,9 +80,7 @@ export class Game {
         this.state.timeLeft = this.duration;
         this.updateHud();
 
-        // TODO: implementera spelloop
-        // 1) setInterval: nedräkning av timeLeft
-        // 2) setInterval eller rekursiva setTimeout: spawn av mullvadar (variera TTL/frekvens över tid)
+
         this._tickId = setInterval(() => {
 
             this.state.timeLeft -= 1;
@@ -149,8 +146,7 @@ export class Game {
     }
 
     reset() {
-        // TODO: städa timers, ta bort aktiva mullvadar, nollställ state och UI
-        // Tips: loopa this._activeMoles och kalla .disappear()
+
         this.state.running = false;
         if (this._tickId !== null) {
             clearInterval(this._tickId);
@@ -250,8 +246,7 @@ export class Game {
             this.updateHud();
         }
 
-        // TODO: om cellen innehåller en aktiv mullvad => poäng; annars öka missar
-        // Uppdatera HUD varje gång.
+
     }
 
     updateHud() {
