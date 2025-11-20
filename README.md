@@ -15,7 +15,7 @@ Ett enkelt webbaserat Whack-A-Mole-spel byggt med HTML, CSS och JavaScript (ES-m
 
 ### Tekniker:
 
-HTML5, CSS (Flexbox), JavaScript (ES6-moduler), DOM API.
+HTML5, CSS (Flexbox), JavaScript (ES6-moduler).
 
 Tillgänglighet:
 
